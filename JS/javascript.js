@@ -32,16 +32,14 @@ function random(array) {
     var currentIndex = array.length,
         temporaryValue, randomIndex;
 
-    // While there remain elements to shuffle...
     while (0 !== currentIndex) {
 
-        // Pick a remaining element...
+        
         var randomIndex = Math.floor(Math.random() * currentIndex);
         console.log(currentIndex)
         currentIndex -= 1;
         console.log(currentIndex)
-
-        // And swap it with the current element.
+        
 
         var temporaryValue = array[currentIndex];
         array[currentIndex] = array[randomIndex];
@@ -86,15 +84,6 @@ function viewRandom() {
 
 }
 
-// var myInterval = setInterval(shuffler, 50);
-// clearInterval(myInterval);
 
 document.getElementById("random").addEventListener("click", viewRandom);
 
-window.addEventListener("keypress", checkKeyPressed, false);
-
-function checkKeyPressed(e) {
-    if (e.charCode == "32") {
-        document.getElementById("random").addEventListener("click", viewRandom);
-    }
-}
