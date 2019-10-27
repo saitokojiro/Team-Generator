@@ -23,8 +23,8 @@ var user_list = [
     "FRUHAUF Thibaud",
     "VIDALE Cindy",
     "ALALI Mouafak",
-    "NULL Damien",
-    "NULL Kévin"
+    "BARBIER Damien",
+    "BASS Kévin"
 ];
 
 
